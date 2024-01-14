@@ -5,11 +5,11 @@ import "./App.css"
 import { Footer } from "./components/Footer"
 
 import { NavBar } from "./components/NavBar"
-import { HomePage } from "./pages/homePage"
 import { SkillsPage } from "./pages/SkillsPage"
 import { ProjectPage } from "./pages/ProjectPage"
 import { AboutPage } from "./pages/AboutPage"
 import { ContactPage } from "./pages/ContactPage"
+import {HomePage} from "./pages/HomePage"
 
 function App() {
   
