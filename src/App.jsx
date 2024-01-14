@@ -1,12 +1,15 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import "./App.css"
-import { About } from "./components/About"
-import { Banner } from "./components/Banner"
-import { Contact } from "./components/Contact"
+
+
 import { Footer } from "./components/Footer"
-import { Hero } from "./components/Hero"
+
 import { NavBar } from "./components/NavBar"
-import { Projects } from "./components/Projects"
-import { Skills } from "./components/Skills"
+import { HomePage } from "./pages/homePage"
+import { SkillsPage } from "./pages/SkillsPage"
+import { ProjectPage } from "./pages/ProjectPage"
+import { AboutPage } from "./pages/AboutPage"
+import { ContactPage } from "./pages/ContactPage"
 
 function App() {
   
@@ -28,39 +31,53 @@ function App() {
 
     {/* <!-- navbar --> */}
 
-    <NavBar/>
+    
     
 
     {/* <!-- hero section --> */}
 
-    <Hero/>
+    {/* <Hero/> */}
+
+    <BrowserRouter>
+    <NavBar/>
+
+      <Routes>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/skills" element={<SkillsPage/>}/>
+        <Route path="/projects" element={<ProjectPage/>} />
+        <Route path="/about" element={<AboutPage/>}/>
+        <Route path="/contact" element={<ContactPage/>}/>
+      </Routes>
+
+    
+    </BrowserRouter>
 
     
 
     {/* <!-- banner --> */}
-    <Banner/>
+    {/* <Banner/> */}
     
     
 
     {/* <!-- skills --> */}
 
-    <Skills/>
+    {/* <Skills/> */}
     
 
 
 
     {/* <!-- projects --> */}
-    <Projects/>
+    {/* <Projects/>  */}
 
 
     {/* <!-- about --> */}
-    <About/>
+    {/* <About/> */}
 
 
 
     {/* <!-- contact --> */}
 
-    <Contact/>
+    {/* <Contact/> */}
 
 
 
