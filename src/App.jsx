@@ -1,97 +1,27 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import "./App.css"
 
+import "./App.css";
+import { About } from  "../src/components/about/About";
+import { Contact } from "../src/components/contact/Contact"
+import Footer from "../src/components/footer/Footer";
 
-import { Footer } from "./components/Footer"
-
-import { NavBar } from "./components/NavBar"
-import { SkillsPage } from "./pages/SkillsPage"
-import { ProjectPage } from "./pages/ProjectPage"
-import { AboutPage } from "./pages/AboutPage"
-import { ContactPage } from "./pages/ContactPage"
-import {HomePage} from "./pages/HomePage"
+import { Header } from "../src/components/header/Header";
+import Nav from "../src/components/navbar/Navbar";
+import { Project } from "../src/components/project/Project";
+import { Skills } from "../src/components/skills/Skills";
 
 function App() {
-  
-
   return (
     <>
-     <body>
+      <Header />
+      <Nav />
 
-{/* <!-- dark mode toggler --> */}
-
-<input type="checkbox" id="darkmode"/>
-
-
-<div className="wrapper">
-
-    <label htmlFor="darkmode" className="dark-mo  de-toggle">
-        <div className="fa-sharp fa-solid fa-circle-half-stroke"></div>
-    </label>
-
-    {/* <!-- navbar --> */}
-
-    
-    
-
-    {/* <!-- hero section --> */}
-
-    {/* <Hero/> */}
-
-    <BrowserRouter>
-    <NavBar/>
-
-      <Routes>
-        <Route path="/" element={<HomePage/>}/>
-        <Route path="/skills" element={<SkillsPage/>}/>
-        <Route path="/projects" element={<ProjectPage/>} />
-        <Route path="/about" element={<AboutPage/>}/>
-        <Route path="/contact" element={<ContactPage/>}/>
-      </Routes>
-
-    
-    </BrowserRouter>
-
-    
-
-    {/* <!-- banner --> */}
-    {/* <Banner/> */}
-    
-    
-
-    {/* <!-- skills --> */}
-
-    {/* <Skills/> */}
-    
-
-
-
-    {/* <!-- projects --> */}
-    {/* <Projects/>  */}
-
-
-    {/* <!-- about --> */}
-    {/* <About/> */}
-
-
-
-    {/* <!-- contact --> */}
-
-    {/* <Contact/> */}
-
-
-
-    {/* <!-- footers --> */}
-
-    <Footer/>
-
-   
-    
-</div>
-
-</body>
+      <Skills />
+      <Project />
+      <About />
+      <Contact />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

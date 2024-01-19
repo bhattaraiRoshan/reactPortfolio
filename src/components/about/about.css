@@ -1,0 +1,27 @@
+.roshan{
+    /* position: absolute; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    /* margin-top: 4rem; */
+    /* border-radius: 5rem; */
+  
+    /* overflow: hidden; */
+    width: 40%;
+    text-align: center;
+    
+}
+
+.about-me-img{
+   display: flex;
+   justify-content: center;
+   padding-top: 10px;
+   padding-bottom: 20px;
+}
+
+
+   
+      @media screen and (max-width: 600px) {
+        .describe{
+       width: 90%;
+        }
+      }

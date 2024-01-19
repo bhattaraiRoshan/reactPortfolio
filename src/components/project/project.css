@@ -1,0 +1,61 @@
+.project {
+    padding-bottom: 20px;
+    min-height: 100vh;
+  }
+  
+  .project-section {
+    min-height: 100vh;
+  }
+  .project__description {
+    /* padding-left: 350px; */
+    padding-top: 20px;
+  }
+  
+  .project__hero {
+    padding-top: 40px;
+  }
+
+  .pj-img{
+    width: 10%;
+  }
+  
+  .row {
+    /* padding-top: 50px; */
+  }
+  
+  h4 {
+    text-decoration: underline;
+  }
+/*   
+  img {
+    transition: transform 0.2s;
+  }
+   */
+ 
+   .heading{
+    margin-bottom: 20px;
+   }
+
+ 
+  .project__icons {
+    padding-left: 4px;
+    margin: 2px;
+    cursor: pointer;
+  }
+  
+  a {
+    text-decoration: none;
+    color: none;
+  }
+  
+  .icons {
+    margin: 1px;
+    transition: transform 0.2s;
+  }
+  
+  .icons:hover {
+    transform: scale(1.9);
+    color: beige;
+  }
+
+ 
