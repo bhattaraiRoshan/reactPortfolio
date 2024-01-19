@@ -2,10 +2,10 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import project1 from "../../image/project1.PNG";
-import project2 from "../../image/project2.PNG";
-import project3 from "../../image/project3.PNG";
-import project4 from "../../image/project4.PNG";
+import project1 from "../../image/project1.png";
+import project2 from "../../image/project2.png";
+import project3 from "../../image/project3.png";
+import project4 from "../../image/project4.png";
 import "./project.css";
 
 export const Project = () => {
